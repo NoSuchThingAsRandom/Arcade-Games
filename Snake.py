@@ -3,7 +3,7 @@ import time
 import pygame
 
 
-def play():
+def play(increase_speed):
     # Colours
     BLACK = (0, 0, 0)
     WHITE = (255, 255, 255)
@@ -55,7 +55,10 @@ def play():
     else:
         speed = 5
     """
-    speed = 10
+    if increase_speed:
+        speed=5
+    else:
+        speed = 10
 
     # Scoring
     score = 0
@@ -131,7 +134,8 @@ def play():
                 foodx = random.randint(0, rows - 1)
                 foody = random.randint(0, columns - 1)
             grid[foodx][foody] = "F"
-
+            if increase_speed:
+                speed+=2
         if preserve_tail:
             preserve_tail = False
         else:
@@ -180,7 +184,13 @@ def play():
         clock.tick(speed)
     pygame.display.quit()
     pygame.quit()
+    print("\n"*3)
     print("Score: " + str(score) + "\nLength: " + str(length) + "\nTime: +" + str(
         round((time.time() - start), 2)) + "\nSpeed: " + str(speed))
     return [str(score), str(length), str(round((time.time() - start), 2)), str(speed)]
 # play()
+def standard():
+    return play(False)
+
+def speed():
+    return play(True)

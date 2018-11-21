@@ -1,32 +1,46 @@
 import Snake as snake
+import Frogger as frogger
 import os.path
 
-games = ["Snake", "Frogger"]
+games = ["Snake (Standard)", "Snake (Speed)","Frogger"]
 scores = []
 
 
 def select():
-    global user
     global scores
     print("\n"*3)
-    print("What game would you like to play?")
+    user = input("What is your name? ")
+    print("What game would you like to play? ")
     for game in games:
         print(game)
     choice = input()
+    choice=choice.lower()
     file = open("Scores.txt", "a")
-    if choice == "Snake":
-        result = snake.play()
+    if choice == "standard":
+        result = snake.standard()
         result.insert(0, "Snake")
         result.insert(1, user)
         scores.append(result)
-        file.write(str(result).replace("[", "").replace("]", ""))
+        file.write(str(result).replace("[", "").replace("]", "")+str("\r\n"))
+    elif choice == "speed":
+        result = snake.speed()
+        result.insert(0, "Snake")
+        result.insert(1, user)
+        scores.append(result)
+        file.write(str(result).replace("[", "").replace("]", "")+str("\r\n"))
+    elif choice == "frogger":
+        result = frogger.play()
+        result.insert(0, "Frogger")
+        result.insert(1, user)
+        scores.append(result)
+        file.write(str(result).replace("[", "").replace("]", "")+str("\r\n"))
+
     else:
         print("Unknown game!")
     file.close()
     select()
 
 
-user = input("Please enter a name: ")
 if not os.path.exists("Scores.txt"):
     file = open("Scores.txt", "w")
     file.write("Snake, user, Score, Length, Time, Speed")
