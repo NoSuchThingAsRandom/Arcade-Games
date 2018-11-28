@@ -1,4 +1,6 @@
 import random
+import http
+import urllib.request
 hangman = [
 '''
        
@@ -582,10 +584,23 @@ grid paper
 sidewalk
 toothbrush
 soda can"""
+
+
+def load_words():
+    with open('words_alpha.txt') as word_file:
+        valid_words = (word_file.read().split())
+
+    return valid_words
+words=load_words()
 hangman=hangman[::-1]
-words=items.split("\n")
+temp=items.split("\n")
 for a in animals:
     words.append(a)
+for t in temp:
+    words.append(t)
+
+
+
 
 def game():
     global hangman
@@ -636,6 +651,18 @@ def game():
     else:
         print("You win")
     print("The word was: "+str(word))
+    #https://wordsapiv1.p.mashape.com/words/example/definitions
+    URL="https://www.collinsdictionary.com/dictionary/english/"+word
+    proxy = urllib.request.ProxyHandler({})
+    auth = urllib.request.HTTPBasicAuthHandler()
+    opener = urllib.request.build_opener(proxy, auth, urllib.request.HTTPHandler)
+    urllib.request.install_opener(opener)
+    conn = urllib.request.urlopen(URL)
+    with urllib.request.urlopen(URL) as response:
+        html = response.read().decode("utf-8")
+        print(html)
+
+    
 play=True
 while play:
     game()
