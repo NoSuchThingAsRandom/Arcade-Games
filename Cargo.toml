@@ -1,0 +1,12 @@
+[package]
+name = "bouncing-ball"
+version = "0.1.0"
+authors = ["nightfortress <samralp76@gmail.com>"]
+
+[[bin]]
+name="bouncing-square"
+
+[dependencies]
+piston_window = "0.85.0"
+piston="0.39"
+pistoncore-input = "0.23.0"
