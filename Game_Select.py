@@ -1,5 +1,5 @@
-import Snake as snake
-import Frogger as frogger
+from Frogger import Frogger
+from Snake import snake
 import os.path
 
 games = ["Snake (Standard)", "Snake (Speed)","Frogger"]

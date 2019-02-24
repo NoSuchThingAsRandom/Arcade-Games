@@ -1,0 +1,54 @@
+import random
+import time
+test=['rock', 'rock', 'scissors', 'rock', 'rock', 'scissors', 'rock', 'paper', 'paper', 'scissors', 'scissors', 'paper', 'rock', 'scissors', 'rock', 'scissors', 'rock', 'rock', 'paper', 'paper', 'paper', 'scissors', 'rock', 'paper', 'paper', 'paper', 'scissors', 'paper', 'rock', 'scissors', 'scissors', 'paper', 'scissors', 'rock', 'paper', 'rock', 'rock', 'scissors', 'paper', 'paper', 'rock', 'scissors', 'paper', 'paper', 'scissors', 'scissors', 'paper', 'paper', 'paper', 'rock', 'paper', 'rock', 'paper', 'paper', 'paper', 'paper', 'paper', 'paper', 'paper', 'scissors', 'scissors', 'scissors', 'paper', 'paper', 'rock', 'rock', 'scissors', 'rock', 'rock', 'scissors', 'rock', 'scissors', 'rock', 'rock', 'paper', 'rock', 'scissors', 'scissors', 'paper', 'paper', 'rock', 'paper', 'paper', 'rock', 'rock', 'paper', 'scissors', 'paper', 'rock', 'scissors', 'rock', 'scissors', 'scissors', 'paper', 'paper', 'rock', 'scissors', 'scissors', 'rock', 'scissors', 'scissors', 'rock', 'rock', 'paper', 'rock', 'rock', 'paper', 'rock', 'paper', 'rock', 'paper', 'rock', 'rock', 'paper', 'paper', 'rock', 'paper', 'scissors', 'scissors', 'paper', 'scissors', 'scissors', 'rock', 'paper', 'scissors', 'scissors', 'scissors', 'rock', 'scissors', 'scissors', 'rock', 'rock', 'rock', 'paper', 'rock', 'scissors', 'rock', 'paper', 'scissors', 'rock', 'paper', 'scissors', 'scissors', 'paper', 'paper', 'scissors', 'scissors', 'rock', 'paper', 'paper', 'scissors', 'paper', 'scissors', 'rock', 'rock', 'rock', 'paper', 'scissors', 'scissors', 'scissors', 'scissors', 'paper', 'rock', 'paper', 'scissors', 'paper', 'paper', 'scissors', 'paper', 'paper', 'scissors', 'scissors', 'paper', 'paper', 'paper', 'scissors', 'paper', 'paper', 'paper', 'paper', 'paper', 'scissors', 'paper', 'scissors', 'rock', 'rock', 'paper', 'paper', 'scissors', 'paper', 'scissors', 'paper', 'paper', 'scissors', 'rock', 'scissors', 'scissors', 'rock', 'paper', 'rock', 'paper', 'rock', 'paper', 'paper', 'paper', 'scissors', 'rock', 'rock', 'paper', 'rock', 'rock', 'rock', 'scissors', 'rock', 'rock', 'paper', 'paper', 'scissors', 'scissors', 'scissors', 'paper', 'rock', 'paper', 'scissors', 'paper', 'scissors', 'scissors', 'paper', 'paper', 'scissors', 'rock', 'rock', 'paper', 'scissors', 'rock', 'scissors', 'scissors', 'rock', 'paper', 'paper', 'scissors', 'paper', 'scissors', 'scissors', 'paper', 'paper', 'paper', 'paper', 'paper', 'paper', 'rock', 'scissors', 'paper', 'scissors', 'rock', 'rock', 'paper', 'rock', 'rock', 'rock', 'scissors', 'paper', 'paper', 'scissors', 'scissors', 'scissors', 'rock', 'scissors', 'rock', 'rock', 'paper', 'paper', 'rock', 'paper', 'paper', 'scissors', 'scissors', 'paper', 'paper', 'rock', 'scissors', 'scissors', 'rock', 'scissors', 'scissors', 'paper', 'scissors', 'scissors', 'rock', 'scissors', 'rock', 'scissors', 'scissors', 'rock', 'rock', 'rock', 'paper', 'rock', 'rock', 'paper', 'rock', 'scissors', 'scissors', 'paper', 'scissors', 'rock', 'paper', 'scissors', 'paper',
+'rock', 'rock', 'rock', 'rock', 'paper', 'paper', 'rock', 'scissors', 'paper', 'rock', 'scissors', 'scissors', 'scissors', 'paper', 'rock', 'rock', 'rock', 'rock', 'scissors',
+'rock', 'rock', 'paper', 'paper', 'scissors', 'rock', 'paper', 'scissors', 'rock', 'paper', 'rock', 'paper', 'paper', 'rock', 'rock', 'rock', 'rock', 'paper', 'paper', 'rock',
+'rock', 'scissors', 'paper', 'paper', 'scissors', 'paper', 'rock', 'scissors', 'scissors', 'paper', 'paper', 'rock', 'scissors', 'paper', 'rock', 'paper', 'rock', 'scissors', 'rock', 'paper', 'rock', 'paper', 'scissors', 'rock', 'scissors', 'paper', 'paper', 'paper', 'paper', 'scissors', 'rock', 'scissors', 'paper', 'paper', 'rock', 'rock', 'paper',
+'rock', 'rock', 'paper', 'scissors', 'paper', 'paper', 'scissors', 'scissors', 'scissors', 'rock', 'scissors', 'paper', 'scissors', 'rock', 'rock', 'scissors', 'scissors', 'scissors', 'scissors', 'rock', 'scissors', 'rock', 'scissors', 'rock', 'rock', 'paper', 'scissors', 'paper', 'paper', 'rock', 'scissors', 'paper', 'paper', 'rock', 'paper', 'scissors', 'scissors', 'paper', 'scissors', 'paper', 'scissors', 'rock', 'paper', 'rock', 'paper', 'scissors', 'rock', 'paper', 'scissors', 'scissors', 'paper', 'scissors', 'paper', 'scissors', 'rock', 'rock', 'paper', 'rock', 'scissors', 'rock', 'rock', 'paper', 'rock', 'paper', 'rock', 'paper', 'rock', 'scissors', 'rock', 'rock', 'scissors', 'scissors', 'paper', 'scissors', 'rock', 'rock', 'rock', 'scissors', 'scissors', 'paper', 'rock', 'paper', 'scissors', 'rock', 'paper', 'scissors', 'scissors', 'paper', 'rock', 'rock', 'paper', 'rock', 'scissors', 'paper', 'rock', 'paper', 'rock', 'scissors', 'scissors', 'scissors', 'scissors', 'rock', 'scissors', 'scissors', 'scissors', 'paper', 'rock', 'paper', 'paper', 'scissors', 'scissors', 'rock', 'paper', 'paper', 'paper', 'scissors', 'scissors', 'rock', 'rock', 'rock', 'paper', 'scissors', 'paper', 'rock', 'paper', 'scissors', 'paper', 'paper', 'paper', 'paper', 'scissors', 'rock', 'paper', 'scissors', 'scissors', 'scissors', 'rock', 'rock', 'paper', 'paper', 'paper', 'rock', 'rock', 'rock', 'paper', 'rock', 'rock', 'paper', 'scissors', 'scissors', 'rock', 'rock', 'paper', 'rock', 'rock', 'rock', 'scissors', 'rock', 'rock', 'rock', 'paper', 'rock', 'rock', 'paper', 'rock', 'scissors', 'paper', 'scissors', 'paper', 'scissors', 'paper', 'paper', 'paper', 'paper', 'paper', 'scissors', 'paper', 'rock', 'rock', 'scissors', 'scissors', 'scissors', 'rock', 'rock', 'paper', 'scissors', 'scissors', 'paper', 'rock', 'rock', 'rock', 'rock', 'scissors', 'scissors', 'scissors', 'rock', 'paper', 'scissors', 'paper', 'paper', 'paper', 'scissors', 'scissors', 'scissors', 'paper', 'scissors', 'scissors', 'rock', 'rock', 'paper', 'paper', 'paper', 'rock', 'paper', 'paper', 'scissors', 'paper', 'paper', 'paper', 'paper', 'paper', 'rock', 'rock', 'rock', 'rock', 'scissors', 'rock', 'rock', 'paper', 'rock', 'scissors', 'scissors', 'scissors', 'rock', 'rock', 'paper', 'paper', 'paper', 'paper', 'scissors', 'rock', 'rock', 'paper', 'rock', 'paper', 'paper', 'paper', 'scissors', 'rock', 'rock', 'scissors', 'rock', 'scissors', 'scissors', 'paper', 'paper', 'paper', 'paper', 'rock', 'scissors', 'paper', 'rock', 'scissors', 'rock', 'paper', 'paper', 'rock', 'scissors', 'paper', 'rock', 'rock', 'paper', 'paper', 'paper', 'rock', 'rock', 'rock', 'scissors', 'rock', 'scissors', 'scissors', 'scissors', 'scissors', 'rock', 'rock', 'paper', 'paper', 'paper', 'paper', 'rock', 'rock', 'rock', 'scissors', 'paper', 'rock', 'rock', 'paper', 'scissors', 'paper', 'scissors', 'scissors', 'scissors', 'scissors', 'rock', 'scissors', 'rock', 'scissors', 'rock', 'rock', 'paper', 'rock', 'paper', 'rock', 'paper', 'rock', 'paper', 'rock', 'scissors', 'scissors', 'paper', 'scissors', 'rock', 'rock', 'rock', 'scissors', 'paper', 'scissors', 'rock', 'rock', 'paper', 'paper', 'rock', 'rock', 'scissors', 'paper', 'rock', 'paper', 'scissors', 'rock', 'rock', 'paper', 'paper', 'paper', 'rock', 'rock', 'scissors', 'rock', 'paper', 'scissors', 'paper', 'rock', 'paper', 'paper', 'rock', 'paper', 'paper', 'paper', 'scissors', 'scissors', 'scissors', 'rock', 'rock', 'scissors', 'scissors', 'paper', 'scissors', 'paper', 'paper', 'scissors', 'paper', 'paper', 'scissors', 'paper', 'scissors', 'scissors', 'scissors', 'paper', 'rock', 'rock', 'paper', 'rock', 'paper', 'scissors', 'scissors', 'paper', 'paper', 'paper', 'scissors', 'paper', 'rock', 'paper', 'rock', 'paper', 'scissors', 'scissors', 'rock', 'scissors', 'scissors', 'rock', 'scissors', 'paper', 'scissors', 'rock', 'scissors', 'paper', 'scissors', 'paper', 'rock', 'paper', 'paper', 'scissors', 'rock', 'paper', 'scissors', 'scissors', 'rock', 'paper', 'scissors', 'rock', 'paper', 'scissors', 'scissors', 'scissors', 'rock', 'rock', 'paper', 'paper', 'paper', 'scissors', 'paper', 'paper', 'rock', 'paper', 'rock', 'rock', 'rock', 'paper', 'scissors', 'paper', 'scissors', 'paper', 'scissors', 'scissors', 'scissors', 'paper', 'scissors', 'rock', 'paper', 'scissors', 'rock', 'scissors', 'paper', 'rock', 'rock', 'rock', 'rock', 'rock', 'rock', 'scissors', 'paper', 'rock', 'paper', 'rock', 'rock', 'rock', 'paper', 'paper', 'rock', 'scissors', 'scissors', 'paper', 'rock', 'rock', 'rock', 'scissors', 'scissors', 'paper', 'rock', 'rock', 'rock', 'rock', 'scissors', 'paper', 'rock', 'rock', 'rock', 'rock', 'rock', 'rock', 'rock', 'scissors', 'paper', 'scissors', 'scissors', 'scissors', 'paper', 'paper', 'scissors', 'rock', 'rock', 'rock', 'scissors', 'paper', 'paper', 'rock', 'scissors', 'scissors', 'paper', 'scissors', 'paper', 'rock', 'scissors', 'scissors', 'rock', 'scissors', 'rock', 'paper', 'scissors', 'paper', 'rock', 'paper', 'paper', 'scissors', 'paper', 'paper', 'scissors', 'paper', 'paper', 'paper', 'rock', 'rock', 'scissors', 'scissors', 'scissors', 'paper', 'scissors', 'rock', 'paper', 'rock', 'scissors', 'scissors', 'rock', 'paper', 'paper', 'paper', 'paper', 'paper', 'scissors', 'scissors', 'rock', 'paper', 'scissors', 'scissors', 'paper', 'paper', 'rock', 'rock', 'paper', 'scissors', 'scissors', 'rock', 'paper', 'paper', 'paper', 'paper', 'paper', 'rock', 'paper', 'rock', 'rock', 'paper', 'rock', 'paper', 'paper', 'scissors', 'paper', 'scissors', 'paper', 'rock', 'paper', 'scissors', 'paper', 'paper', 'paper', 'paper', 'rock', 'paper', 'rock', 'rock', 'scissors', 'rock', 'rock', 'scissors', 'paper', 'scissors', 'rock', 'scissors', 'scissors', 'paper', 'paper', 'rock', 'paper', 'paper', 'scissors', 'scissors', 'scissors', 'rock', 'rock', 'paper', 'rock', 'rock', 'rock', 'paper', 'rock', 'paper']
+
+#while(True):
+times=[]
+for i in range(0,100):
+    start=time.time()
+    for x in test:
+        player=x
+        #player=input("Enter your choice, (rock, paper, or scissors): ").lower()
+        if player =="quit":
+            exit(0)
+        computer_num=random.randint(0,2)
+        if computer_num ==0:
+            computer="rock"
+        elif computer_num ==1:
+            computer="paper"
+        elif computer_num ==2:
+            computer="scissors"
+
+        #print("The computer chose "+str(computer)+ " and you chose "+str(player))
+        #print("Therefore:")
+        if player==computer:
+            print("It's a draw!")
+
+        if player=="rock" and computer=="scissors":
+                print("You win!")
+        if player=="rock" and computer=="paper":
+            print("You lose!")
+
+
+        if player=="paper" and computer=="rock":
+            print("You win!")
+        if player=="paper" and computer=="scissors":
+            print("You lose!")
+
+        if player=="scissors" and computer=="paper":
+            print("You win!")
+        if player=="scissors" and computer=="rock":
+            print("You lose!")
+    end =time.time()
+    print("\n"*3)
+    print(end-start)
+    times.append(end-start)
+print(times)
+total=0
+for t in times:
+    total+=t
+print((total/len(times)))

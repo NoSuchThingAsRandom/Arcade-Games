@@ -1,0 +1,11 @@
+[package]
+name = "space-invaders"
+version = "0.1.0"
+authors = ["nightfortress <samralp76@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+bitvec = "0.8"
+piston_window = "0.85.0"
+piston="0.39"
+pistoncore-input = "0.23.0"

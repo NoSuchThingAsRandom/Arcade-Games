@@ -1,0 +1,11 @@
+c:\Users\Sam\Documents\VS Code\Arcade-Games\space-invaders\target\rls\debug\deps\gfx_device_gl-7cef7e5aa6a9023a.rmeta: C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\lib.rs C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\command.rs C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\factory.rs C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\info.rs C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\shade.rs C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\state.rs C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\tex.rs
+
+c:\Users\Sam\Documents\VS Code\Arcade-Games\space-invaders\target\rls\debug\deps\gfx_device_gl-7cef7e5aa6a9023a.d: C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\lib.rs C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\command.rs C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\factory.rs C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\info.rs C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\shade.rs C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\state.rs C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\tex.rs
+
+C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\lib.rs:
+C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\command.rs:
+C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\factory.rs:
+C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\info.rs:
+C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\shade.rs:
+C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\state.rs:
+C:\Users\Sam\.cargo\registry\src\github.com-1ecc6299db9ec823\gfx_device_gl-0.15.4\src\tex.rs:
