@@ -1,0 +1,51 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug lldb",
+            "program": "${workspaceRoot}/target/debug/conway",
+            "args": [],
+            "cwd": "${workspaceRoot}/target/debug/"
+        }
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'Conway'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=Conway",
+                    "--package=Conway"
+                ],
+                "filter": {
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'Conway'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=Conway",
+                    "--package=Conway"
+                ],
+                "filter": {
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
