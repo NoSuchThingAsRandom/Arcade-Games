@@ -43,7 +43,7 @@ impl Player {
     }
     fn fire(&mut self, dims: &Dimensions) {
         if !self.bullet.exist {
-            println!("Created Bullet, x: {}, y:{}, width:{}, height:{},"self.position[0],self.position[1],dims.width as f64*0.01, dims.height as f64*0.05);
+            println!("Created Bullet, x: {}, y:{}, width:{}, height:{}", self.position[0],self.position[1],dims.width as f64*0.01, dims.height as f64*0.05);
             self.bullet = Shot {
                 exist: true,
                 position: [
